@@ -7,7 +7,7 @@
  *
  * Run: node test/plugin-smoke.mjs [--json]
  *
- * @module @local/dsh-session-watch/test/plugin-smoke
+ * @module dsh-session-watch/test/plugin-smoke
  */
 
 import { apply, buildSnapshot, renderSnapshot } from '../lib/plugin.js'

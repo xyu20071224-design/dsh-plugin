@@ -9,7 +9,7 @@
  *
  * Run: node test/run-all.mjs
  *
- * @module @local/dsh-session-watch/test/run-all
+ * @module dsh-session-watch/test/run-all
  */
 
 import { spawnSync } from 'node:child_process'

@@ -1,4 +1,4 @@
-# @local/dsh-session-watch — 发现静默停摆的会话
+# dsh-session-watch — 发现静默停摆的会话
 
 一个 **DSH 插件**（Host 半 + Client 半 + 专家工具半）：扫描本机**所有**会话，找出那些在轮次中途**静默停摆**的对话，
 在侧边栏给出角标，可用 `/watch` 列出详情，并可由一个**用户代理专家**（agent preset）深读任意会话的输入输出、
@@ -141,7 +141,7 @@ prompt(request, signal) {
 
 ```
 dsh-user-proxy/
-  package.json        # @local/dsh-user-proxy，dsh.bundle.patch -> ./cordis.patch.yml
+  package.json        # dsh-user-proxy，dsh.bundle.patch -> ./cordis.patch.yml
   cordis.patch.yml    # 声明 preset-user-proxy
 ```
 
@@ -149,7 +149,7 @@ dsh-user-proxy/
 
 ```yaml
 - id: session-watch-proxy
-  name: '@local/dsh-session-watch/proxy'
+  name: 'dsh-session-watch/proxy'
 ```
 
 ### 三个工具
@@ -329,7 +329,7 @@ foreach ($dir in @("$env:USERPROFILE\.dsh\profiles\node_modules\@local",
 }
 # 再把这一行写进 $env:USERPROFILE\.dsh\cordis.patch.yml 的 insert 列表：
 #   - id: session-watch
-#     name: '@local/dsh-session-watch'
+#     name: 'dsh-session-watch'
 # 然后重启应用（插件行的增删不会热生效）
 ```
 
@@ -410,7 +410,7 @@ bundles 各自的 patch  →  profile 自己的 cordis.patch.yml  →  ~/.dsh/co
 
 ```yaml
 - id: session-watch
-  name: '@local/dsh-session-watch'
+  name: 'dsh-session-watch'
   config:
     stallMs: 300000        # 静默多久算停摆（默认 5 分钟）
     minAgeMs: 60000        # 小于此年龄的会话不判定（默认 1 分钟）
@@ -590,7 +590,7 @@ node test/enable-resume.mjs --check    # 只看，不改
 
 ```yaml
 - id: session-watch
-  name: '@local/dsh-session-watch'
+  name: 'dsh-session-watch'
   config:
     # 见上文"stallMs 是量出来的"一节：15 分钟，不是默认的 5 分钟。
     stallMs: 900000

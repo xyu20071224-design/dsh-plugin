@@ -1,5 +1,5 @@
 {
-  "name": "@local/dsh-user-proxy",
+  "name": "dsh-user-proxy",
   "version": "1.0.0",
   "private": true,
   "type": "module",

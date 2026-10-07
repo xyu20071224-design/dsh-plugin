@@ -1,5 +1,5 @@
 /**
- * Stalled-session detection — the deterministic core of `@local/dsh-session-watch`.
+ * Stalled-session detection — the deterministic core of `dsh-session-watch`.
  *
  * WHY THIS IS A SEPARATE, PURE MODULE
  *
@@ -23,7 +23,7 @@
  * turn does not fail loudly, it stops. That is why detection keys on log
  * ADVANCE over time rather than on the presence of an error.
  *
- * @module @local/dsh-session-watch/detect
+ * @module dsh-session-watch/detect
  */
 
 /**

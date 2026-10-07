@@ -8,7 +8,7 @@
  *
  * Run: node test/logs.test.mjs
  *
- * @module @local/dsh-session-watch/test/logs
+ * @module dsh-session-watch/test/logs
  */
 
 import zlib from 'node:zlib'

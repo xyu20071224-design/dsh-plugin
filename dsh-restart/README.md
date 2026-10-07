@@ -1,4 +1,4 @@
-# @local/dsh-restart
+# dsh-restart
 
 `/restart` —— 退出并重新启动 dsh 桌面应用。
 

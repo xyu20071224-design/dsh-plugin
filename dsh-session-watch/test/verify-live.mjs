@@ -208,10 +208,10 @@ const bundleManifest = path.join(home, 'profiles', 'desktop', 'package.json')
 try {
   const manifest = JSON.parse(fs.readFileSync(bundleManifest, 'utf8'))
   const bundles = manifest.dsh?.profile?.bundles ?? []
-  if (bundles.includes('@local/dsh-user-proxy')) {
+  if (bundles.includes('dsh-user-proxy')) {
     console.log('✓ user-proxy bundle 已在 profile 的 bundles 列表里')
   } else {
-    problems.push('@local/dsh-user-proxy 不在 profile 的 dsh.profile.bundles 里，preset 不会装配。')
+    problems.push('dsh-user-proxy 不在 profile 的 dsh.profile.bundles 里，preset 不会装配。')
     console.log('✗ user-proxy bundle 不在 bundles 列表里')
   }
 } catch (error) {

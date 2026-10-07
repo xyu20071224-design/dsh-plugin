@@ -1,5 +1,5 @@
 /**
- * Transcript reading for the user-proxy expert (`@local/dsh-session-watch/proxy`).
+ * Transcript reading for the user-proxy expert (`dsh-session-watch/proxy`).
  *
  * WHY THIS IS A SEPARATE MODULE FROM `./logs.js`
  *
@@ -23,7 +23,7 @@
  * It performs no I/O of its own and calls no model, so every shaping rule below is
  * testable offline against real logs.
  *
- * @module @local/dsh-session-watch/transcript
+ * @module dsh-session-watch/transcript
  */
 
 /** Default number of transcript entries returned. */

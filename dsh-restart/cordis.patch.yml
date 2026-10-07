@@ -1,4 +1,4 @@
-# Bundle patch for @local/dsh-restart.
+# Bundle patch for dsh-restart.
 #
 # One row: the Host plugin that registers the `/restart` command. It injects the
 # `commands` service, so the row stays inactive until that service is present.
@@ -8,5 +8,5 @@
 # flag would let a row change a safety-relevant invocation.
 - insert:
     - id: restart
-      name: '@local/dsh-restart'
+      name: 'dsh-restart'
       config: {}

@@ -10,7 +10,7 @@
  *
  * Run: node test/client-smoke.mjs
  *
- * @module @local/dsh-session-watch/test/client-smoke
+ * @module dsh-session-watch/test/client-smoke
  */
 
 import fs from 'node:fs'
@@ -95,7 +95,7 @@ new Function('window', 'require', `${code}\n`)(globalThis.window, name => {
 })
 
 check('bundle 已注册到 __ModuleLoader__', captured !== null)
-check('bundle id 正确', captured?.id === '@local/dsh-session-watch')
+check('bundle id 正确', captured?.id === 'dsh-session-watch')
 
 const exports_ = captured.factory(name => {
   if (name === 'react') return react

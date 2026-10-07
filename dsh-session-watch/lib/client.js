@@ -14,11 +14,11 @@
  * factory a `require` for platform modules only (`react` here), so everything else
  * must be inline. There is no build step for this file.
  *
- * @module @local/dsh-session-watch/client
+ * @module dsh-session-watch/client
  */
 
 window.__ModuleLoader__.load({
-	id: "@local/dsh-session-watch",
+	id: "dsh-session-watch",
 	factory: (require) => {
 		var module = { exports: {} }
 		var exports = module.exports

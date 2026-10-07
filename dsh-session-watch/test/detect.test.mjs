@@ -9,7 +9,7 @@
  *
  * Run: node test/detect.test.mjs
  *
- * @module @local/dsh-session-watch/test/detect
+ * @module dsh-session-watch/test/detect
  */
 
 import { classifySession, isIntentionalEnd, AUTO_RESUMABLE } from '../lib/detect.js'

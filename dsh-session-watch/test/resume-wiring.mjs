@@ -15,7 +15,7 @@
  *
  * Run: node test/resume-wiring.mjs
  *
- * @module @local/dsh-session-watch/test/resume-wiring
+ * @module dsh-session-watch/test/resume-wiring
  */
 
 import fs from 'node:fs'

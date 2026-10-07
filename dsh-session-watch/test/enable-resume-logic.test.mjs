@@ -171,16 +171,16 @@ await test('flips the session-watch row and reports the change', () => {
   const source = [
     '- insert:',
     '    - id: window-pin',
-    "      name: '@local/dsh-window-pin'",
+    "      name: 'dsh-window-pin'",
     '    - id: session-watch',
-    "      name: '@local/dsh-session-watch'",
+    "      name: 'dsh-session-watch'",
     '      config:',
     '        stallMs: 900000',
     '        resume:',
     '          enabled: false',
     "          maxAttempts: 2",
     '    - id: journal',
-    "      name: '@local/dsh-journal'",
+    "      name: 'dsh-journal'",
   ].join('\n')
   const result = flipEnabledInSessionWatch(source)
   assert.equal(result.changed, true)
@@ -197,11 +197,11 @@ await test('does NOT touch an enabled: false belonging to another row', () => {
   const source = [
     '- insert:',
     '    - id: some-other-plugin',
-    '      name: "@local/other"',
+    '      name: "other"',
     '      config:',
     '        enabled: false',
     '    - id: session-watch',
-    "      name: '@local/dsh-session-watch'",
+    "      name: 'dsh-session-watch'",
     '      config:',
     '        resume:',
     '          enabled: false',

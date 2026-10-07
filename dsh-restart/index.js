@@ -32,7 +32,7 @@
  * `launched` status, is interim: it is NEVER reported as "the restart
  * succeeded". Only a terminal status written by the worker is reported as fact.
  *
- * @module @local/dsh-restart
+ * @module dsh-restart
  */
 
 import { spawn } from 'node:child_process'

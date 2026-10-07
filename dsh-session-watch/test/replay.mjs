@@ -9,7 +9,7 @@
  *
  * Run: node test/replay.mjs [--home <DSH_HOME>] [--stall-ms N] [--verbose]
  *
- * @module @local/dsh-session-watch/test/replay
+ * @module dsh-session-watch/test/replay
  */
 
 import fs from 'node:fs'

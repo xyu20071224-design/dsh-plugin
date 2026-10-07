@@ -4,7 +4,7 @@
  *
  * Run: node test/tail.mjs <id-fragment> [<id-fragment> ...]
  *
- * @module @local/dsh-session-watch/test/tail
+ * @module dsh-session-watch/test/tail
  */
 
 import fs from 'node:fs'

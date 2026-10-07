@@ -24,7 +24,7 @@
  * expert-initiated resume MUST count against the same per-session cap. Two separate
  * counters would let a session exceed its limit simply by changing who asked.
  *
- * @module @local/dsh-session-watch/ledger
+ * @module dsh-session-watch/ledger
  */
 
 import { mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'

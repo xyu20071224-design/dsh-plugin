@@ -1,5 +1,5 @@
 /**
- * Auto-resume policy for `@local/dsh-session-watch`.
+ * Auto-resume policy for `dsh-session-watch`.
  *
  * This module decides WHETHER and WHEN a stalled session may be nudged, and it is
  * deliberately separate from both the detector and the prompt text.
@@ -34,7 +34,7 @@
  * observation, and returns a decision. It performs no I/O and calls no model, so
  * every gate is testable without a live harness.
  *
- * @module @local/dsh-session-watch/resume
+ * @module dsh-session-watch/resume
  */
 
 import { AUTO_RESUMABLE } from './detect.js'

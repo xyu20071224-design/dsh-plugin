@@ -171,7 +171,7 @@ test('user-proxy adds EXACTLY the one intended row', () => {
 test('the added row resolves to this package\'s proxy half', () => {
   const row = ourRows.find(r => r.id === ADDED_ROW_ID)
   assert.ok(row, 'the proxy row must be present')
-  assert.equal(row.name, '@local/dsh-session-watch/proxy')
+  assert.equal(row.name, 'dsh-session-watch/proxy')
 })
 
 test('the proxy half is actually exported by the package manifest', () => {

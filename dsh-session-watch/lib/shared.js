@@ -26,7 +26,7 @@
  * This module also holds the MOUNT RECORD, which answers a question this project got
  * wrong twice — see {@link recordProxyMount}.
  *
- * @module @local/dsh-session-watch/shared
+ * @module dsh-session-watch/shared
  */
 
 import { mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'

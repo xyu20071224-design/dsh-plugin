@@ -1,5 +1,5 @@
 {
-  "name": "@local/dsh-restart",
+  "name": "dsh-restart",
   "version": "0.2.0",
   "private": true,
   "description": "Adds /restart: an external PowerShell script quits the DSH desktop shell and starts it again.",

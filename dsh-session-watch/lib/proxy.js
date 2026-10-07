@@ -1,5 +1,5 @@
 /**
- * The user-proxy expert's tools (`@local/dsh-session-watch/proxy`).
+ * The user-proxy expert's tools (`dsh-session-watch/proxy`).
  *
  * WHAT THIS IS
  *
@@ -25,7 +25,7 @@
  *      ledger as an automatic one, so the sidebar and `/watch` both report it. An
  *      action nobody can see is indistinguishable from the harness acting alone.
  *
- * @module @local/dsh-session-watch/proxy
+ * @module dsh-session-watch/proxy
  */
 
 import { classifySession, AUTO_RESUMABLE } from './detect.js'

@@ -1,5 +1,5 @@
 /**
- * Session-log reading for `@local/dsh-session-watch`.
+ * Session-log reading for `dsh-session-watch`.
  *
  * The watcher must judge sessions that are NOT its own, so it cannot use the
  * agent-scoped `session_query` tools: those authorize from the immutable calling
@@ -15,7 +15,7 @@
  *      an error: the frames already flushed are enough to judge the session, and
  *      failing here would report a healthy session as unreadable.
  *
- * @module @local/dsh-session-watch/logs
+ * @module dsh-session-watch/logs
  */
 
 import fs from 'node:fs'

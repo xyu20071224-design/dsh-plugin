@@ -8,7 +8,7 @@
  *
  * Run: node test/resume.test.mjs
  *
- * @module @local/dsh-session-watch/test/resume
+ * @module dsh-session-watch/test/resume
  */
 
 import { RESUME_DEFAULTS, backoffFor, buildNudgeText, decideResume } from '../lib/resume.js'

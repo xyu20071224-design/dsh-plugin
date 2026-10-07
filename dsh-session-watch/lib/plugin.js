@@ -29,7 +29,7 @@
  *   4. Every automatic action is recorded and reported. A nudge the user cannot
  *      see would be indistinguishable from the harness acting on its own.
  *
- * @module @local/dsh-session-watch
+ * @module dsh-session-watch
  */
 
 import { randomUUID } from 'node:crypto'
@@ -783,7 +783,7 @@ async function diagnostics(ctx) {
   // the preset row would refuse to mount.
   let proxyModule = null
   try {
-    const resolved = import.meta.resolve('@local/dsh-session-watch/proxy')
+    const resolved = import.meta.resolve('dsh-session-watch/proxy')
     proxyModule = { resolved, ok: true }
   } catch (error) {
     proxyModule = { resolved: null, ok: false, error: String(error?.message ?? error) }

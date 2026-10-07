@@ -1,5 +1,5 @@
 {
-  "name": "@local/dsh-session-watch",
+  "name": "dsh-session-watch",
   "version": "0.1.0",
   "private": true,
   "description": "Watch every session on this DSH host and surface the ones that stalled mid-turn, so a silent stop cannot sit unnoticed for hours.",

@@ -30,7 +30,7 @@ Then add a row to `%USERPROFILE%\.dsh\cordis.patch.yml` so the Host half loads:
 ```yaml
 - insert:
     - id: session-watch
-      name: '@local/dsh-session-watch'
+      name: 'dsh-session-watch'
       config:
         # Silence before a RUNNING session counts as stalled. See the plugin README:
         # 900000 is measured, not chosen.
@@ -92,4 +92,4 @@ are written from observed data — real log shapes, real event names, real times
 
 ## Licence
 
-Not yet chosen. Treat as all rights reserved until one is added.
+[MIT](LICENSE).

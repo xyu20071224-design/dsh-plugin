@@ -209,10 +209,10 @@
           # ---------------------------------------------------------------------
           # The row that makes this preset the user's proxy.
           #
-          # Resolved through the `@local/dsh-session-watch` junction that already
+          # Resolved through the `dsh-session-watch` junction that already
           # exists in the profile scope, so no new link is needed. Its registrations
           # land in THIS preset's scope, which is what confines the three tools to
           # sessions composed from this preset.
           # ---------------------------------------------------------------------
           - id: session-watch-proxy
-            name: '@local/dsh-session-watch/proxy'
+            name: 'dsh-session-watch/proxy'
