@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "重启 dsh",
+    "description": "提供 /restart 命令：由应用外部的 PowerShell 脚本让 dsh 桌面应用退出并重新启动。插件本身做不到重启（Cordis 插件接触不到 Electron 外壳的私有 IPC 通道），因此它只负责委托并把结果如实报告出来。"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@local/dsh-restart",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Adds /restart: an external PowerShell script quits the DSH desktop shell and starts it again.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "script/*.ps1"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "meta": {
+    "title": "Restart dsh",
+    "description": "Adds /restart: an external script quits the desktop app and starts it again."
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@local/dsh-user-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "User-proxy agent preset: one identity that can read every session on this host and resume the ones that stopped silently.",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

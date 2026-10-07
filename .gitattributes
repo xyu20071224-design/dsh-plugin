@@ -1,0 +1,27 @@
+# Normalise line endings in the repository. Without this, Git on Windows converts LF to
+# CRLF in the WORKING TREE (the warnings it prints on the first `add`), and a file's checked-
+# out bytes then depend on who cloned it. These plugins are loaded straight from disk by the
+# app and diffed by tests, so a platform-dependent working tree is a real source of noise.
+#
+# `text=auto` stores LF in the repository and checks out the platform default. The explicit
+# rules below cover files whose bytes matter:
+
+* text=auto
+
+# PowerShell: Windows PowerShell 5.1 decodes .ps1 using the ANSI code page, so these are kept
+# as CRLF to match how they were authored and tested. `dsh-restart.ps1` is documented as
+# pure ASCII for the same reason.
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+
+# Shell-level scripts and source: LF.
+*.js  text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md  text eol=lf
+
+# Binary or generated: never touch.
+*.png binary
+*.jpg binary
+*.zstd binary

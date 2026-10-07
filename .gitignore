@@ -1,0 +1,23 @@
+# Dependencies — these plugins ship with none, so nothing here belongs in the repo.
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Test scratch: some suites write ledgers and logs into a temp DSH home. If one is ever
+# pointed at a real home by mistake, these keep the results out of the repo.
+test/artifacts/
+artifacts-pre-restart.json
+*.tmp-*
+*.bak-*
+
+# Local runtime state — contains real session ids and absolute paths.
+session-watch.json
+session-watch-proxy.json
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+*.swp

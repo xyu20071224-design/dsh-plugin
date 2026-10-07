@@ -1,0 +1,36 @@
+{
+  "name": "@local/dsh-session-watch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Watch every session on this DSH host and surface the ones that stalled mid-turn, so a silent stop cannot sit unnoticed for hours.",
+  "type": "module",
+  "main": "lib/plugin.js",
+  "exports": {
+    ".": {
+      "default": "./lib/plugin.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./proxy": {
+      "default": "./lib/proxy.js"
+    },
+    "./transcript": {
+      "default": "./lib/transcript.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "test": "node test/run-all.mjs",
+    "test:unit": "node test/detect.test.mjs && node test/logs.test.mjs",
+    "test:host": "node test/plugin-smoke.mjs",
+    "test:client": "node test/client-smoke.mjs",
+    "replay": "node test/replay.mjs --verbose"
+  },
+  "license": "MIT"
+}

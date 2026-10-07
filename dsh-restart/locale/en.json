@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Restart dsh",
+    "description": "Adds /restart: an external PowerShell script quits the DSH desktop app and starts it again. The plugin cannot restart the app itself — a Cordis plugin cannot reach the Electron shell's private IPC channel — so it delegates and reports the outcome honestly."
+  }
+}
